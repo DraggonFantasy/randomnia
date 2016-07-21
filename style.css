@@ -1,0 +1,299 @@
+body
+{
+	background: #0C0517;
+}
+
+a:link
+{
+	color: yellow;
+}
+
+a:visited
+{
+	color: orange;
+}
+
+a:hover
+{
+	color: white;
+}
+
+.chainBorder
+{
+	background: #322B3C;
+	
+	border: 20px solid transparent;
+	border-image: url(images/border_big.png) 33% round;
+	border-radius: 20px;	
+}
+
+.left
+{
+	float: left;
+	width: 200px;
+}
+
+.content
+{
+	float: right;
+	width: 500px;
+	min-height: 300px;
+}
+
+.wrap
+{
+	width: 800px;
+	margin: 0 auto;
+	padding: 15px;
+	
+	
+	color: white;
+}
+
+.gameTitle
+{
+	width: 100%;
+	height: 50px;
+	font-weight: bold;
+	font-size: 15pt;
+	text-align: center;
+	text-shadow: 2px 2px 3px lightblue;
+	margin-bottom: 30px;
+}
+
+#heroData > .heroName
+{
+	color: yellow;
+	text-align: center;
+	font-weight: bold;
+}
+
+#heroData > .heroFace
+{
+	display: block;
+	margin: 0 auto;
+	border: 1px solid white;
+	margin-bottom: 5px;
+}
+
+#heroData > .heroRegion
+{
+	color: yellow;
+	font-size: 70%;
+	text-align: center;
+	text-shadow: 0 0 10px yellow;
+	background: #AA5555;
+	border-radius: 50px;
+	width: 64px;
+	margin: 0 auto;
+}
+
+#heroData > .heroHealth
+{
+	height: 16px;
+	text-align: center;
+	background: #CC0000;
+	
+	background: -webkit-linear-gradient(bototm, #CC0000, #FF3333); 	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, #CC0000, #FF3333); 				/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, #CC0000, #FF3333); 			/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #CC0000, #FF3333);
+	
+	border: 1px solid black;
+	color: white;
+	margin: 3px 0;
+}
+
+#heroData > .heroCoins
+{
+	float: left;
+	color: yellow;
+}
+
+#heroData > .heroWillpower
+{
+	float: right;
+	color: aqua;
+}
+
+#heroData > .heroInventory
+{
+	padding-right: 10px;
+	height: 200px;
+	overflow: auto;
+}
+
+#heroData > .heroEffects
+{
+	background: #1B1627;
+}
+
+.inventoryItem
+{
+	text-align: right;
+	color: #EEEE55;
+	
+	margin-bottom: 10px;
+}
+
+.inventoryItem:hover
+{
+	background: #433C4D;
+}
+
+.inventoryItem > .icon
+{
+	background: #1D1628;
+	border-radius: 10px;
+	margin: 0 5px;
+}
+
+.inventoryItem > .description
+{
+	color: #EEAAEE;
+}
+
+.inventoryItem > .description > .infoPotionEffect
+{
+	font-style: italic;
+	font-size: 70%;
+	color: #AB78D1;
+}
+
+#achievements
+{
+	height: 300px;
+	overflow: auto;
+}
+
+.achievement
+{
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+.achievement > .description
+{
+	color: gray;
+	font-style: italic;
+	font-size: 8pt;
+}
+
+.achievement > .notCompleted
+{
+	color: #FF0022;
+}
+
+.achievement > .completed
+{
+	color: #55FF55;
+}
+
+.room
+{
+	width: 100%;
+	min-height: 100%;
+}
+
+.inGame
+{
+	display: none;
+}
+
+#deathGame
+{
+	display: none;
+}
+
+#roomName
+{
+	font-weight: bold;
+}
+
+#roomDescr, #rightInfo
+{
+	color: gray;
+	max-height: 300px;
+	overflow: auto;
+}
+
+#rightInfo
+{
+	color: #EEEEEE;
+}
+
+#rightInfo > .heroDamage
+{
+	color: #AAEEEE;
+}
+
+#rightInfo > .monsterDamage
+{
+	color: #EEAAAA;
+}
+
+#rightInfo > .heroRegen
+{
+	color: #AAEEAA;
+}
+
+.bonus
+{
+	color: #EEEEAA;
+}
+
+#roomImageWrap
+{
+	display: table-cell;
+	vertical-align: middle;
+	width: 128px;
+	height: 128px;
+	background: url(images/room/back.png);
+	image-rendering: pixelated;
+}
+
+#roomImage
+{
+	position: relative;
+	top: 25px;
+	min-width: 32px;
+	min-height: 32px;
+	transition-timing-function: steps(5);
+	transition: top 1s, min-width 2s, min-height 2s;
+	image-rendering: pixelated;
+}
+#roomImage:hover
+{
+	top: 50px;
+	min-width: 96px;
+	min-height: 96px;
+}
+
+.ad
+{
+	background: #AA5555;
+	color: black;
+	border: yellow 1px solid;
+	border-radius: 3px;
+}
+
+input[type=button]
+{
+	min-width: 28px;
+	min-height: 28px;
+	background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.deathScreen
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grave
+{
+	border: 2px orange solid;
+	image-rendering: pixelated;
+}

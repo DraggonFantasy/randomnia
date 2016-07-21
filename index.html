@@ -1,0 +1,113 @@
+<!doctype HTML>
+<html>
+
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css" />
+<script src="js/main.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/item.js"></script>
+<script src="js/monster.js"></script>
+<script src="js/room.js"></script>
+<script src="js/regions.js"></script>
+<script src="js/hero.js"></script>
+
+<div class="wrap">
+	<div class="gameTitle">DUNGEONS OF RANDOMNIA<br><span style="font-size: 8pt; color: yellow;">Randomnia is waiting for you, HERO!<br> Monsters are eating you, HERO!</span></div>
+	<div class="left chainBorder inGame">
+		<div id="heroData">
+		<div class="heroName"></div>
+		<img class="heroFace" />
+		<div class="heroRegion"></div>
+		<img src="images/icons/gold.png" alt="coins" style="float: left;" /><span class="heroCoins"></span>
+		<img src="images/icons/willpower.png" alt="coins" style="float: right" /><span class="heroWillpower"></span><br>
+		<div class="heroHealth"></div>
+		<div class="heroInventory"></div>
+		<div class="heroEffects"></div>
+		<b></b>
+		</div>
+	</div>
+	
+	<div class="content chainBorder">
+		<div id="newGame">
+			Enter your name, Hero: <input type="text" value="" id="startGame_heroName" /><br>
+			Choose your face, Hero!
+			<div id="startGame_portraitsWrap">
+			</div>
+			<input type="button" value="Begin journey!" id="startGame" />
+		</div>
+		<div id="deathGame">
+			<div class="deathScreen">
+				<div id="deathGame_message"></div>
+				<img class="grave" src="images/grave.png" /><br>
+				<a href="javascript:void(location.reload())">Try again!</a><br><hr>
+				<div class="ad">"Hit and Slice" - best tools for newbie heroes! Go and buy "Hit & Slice" - only in shops of Randomnia!!!</div>
+			</div>
+		</div>
+		<div class="room inGame">
+			<table class="room">
+			<caption id="roomName">ROOM NAME</caption>
+			<tr style="height: 300px;" valign="top">
+				<td align="left" width="30%">
+					<a href="javascript:void(toggleAchievements())">Achievements</a><br>
+					<div id="achievements"></div><hr>
+					Save game: <input type="button" value="Save game" id="saveGame" /><br>
+					Load game: <input type="button" value="Load game" id="loadGame" />
+				</td>
+				<td align="center" valign="bottom" width="30%">
+					<div id="roomInfo">
+						<div id="roomDescr"></div>
+						<div id="roomImageWrap">
+							<img id="roomImage" />
+						</div>
+					</div>
+				</td>
+				<td align="right" width="30%">
+					<div id="rightInfo">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="specialButtons">
+					<input type="button" id="special0" />
+					<input type="button" id="special1" />
+					<input type="button" id="special2" /><br>
+					<input type="button" id="special3" />
+					<input type="button" id="special4" />
+					<input type="button" id="special5" /><br>
+					<input type="button" id="special6" />
+					<input type="button" id="special7" />
+					<input type="button" id="special8" />
+				</td>
+				<td align="right" colspan="2">
+					<table align="right">
+					<tr>
+						<td></td>
+						<td>
+							<input type="button" id="controlUp" value="/\" />
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" id="controlLeft" value="<=" />
+						</td>
+						<td></td>
+						<td>
+							<input type="button" id="controlRight" value="=>" />
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="button" id="controlDown" value="\/" />
+						</td>
+						<td></td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+			
+			</table>
+		</div>
+	</div>
+</div>
